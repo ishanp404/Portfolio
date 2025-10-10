@@ -255,7 +255,7 @@ img {
 .home__img {
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 20%;
   width: 260px;
 }
 
@@ -292,9 +292,6 @@ img {
   transition: opacity 0.3s ease;
 }
 
-.home__img-container:hover .home__img-overlay {
-  opacity: 1;
-}
 
 .home__blob {
   fill: var(--first-color);
