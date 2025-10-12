@@ -199,7 +199,7 @@ img {
 /*===== HOME =====*/
 .home {
   position: relative;
-  row-gap: 5rem;
+  row-gap: 2rem;
   padding: 4rem 0 5rem;
 }
 
@@ -210,6 +210,10 @@ img {
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-2);
+}
+
+.role__title {
+  font-size: 3rem;
 }
 
 .home__title-color {
@@ -1159,5 +1163,94 @@ img {
 
   .home__img {
     width: 450px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home__img {
+    display: none;
+  }
+
+  .home__summary {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .home {
+    padding: 3.5rem 0 2rem;
+  }
+
+  .home__title {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .home__img-container {
+    display: none;
+  }
+
+  .role__title {
+    font-size: 1.75rem;
+  }
+
+  .home {
+    row-gap: 2rem;
+  }
+
+  .home__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--mb-4);
+  }
+
+  .home__subtitle {
+    font-size: 1rem;
+    word-break: break-word;
+  }
+
+
+
+  .home__img {
+    position: static;
+    width: 85%;
+    margin: 1.5rem auto 0;
+  }
+
+  .home__profile-img {
+    height: 320px;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .skills__data {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .experience__content,
+  .education__content,
+  .projects__content {
+    padding: 1.25rem;
+  }
+
+  .portfolio__header {
+    padding: 1.25rem;
+  }
+
+  .portfolio__iframe-container {
+    height: 320px;
+  }
+
+  .section {
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
   }
 }
